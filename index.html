@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de vivero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sistema de vivero</h1>
+    <div id="contenedor1">
+        <form id="CargarProducto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="nombreCientifico">Nombre cientifico:</label>
+            <input type="text" id="nombreCientifico">
+
+            <label for="tipo">Producto:</label>
+            <select id="tipo" required>
+                <option value="planta">Planta</option>
+                <option value="semilla">Semilla</option>
+                <option value="maceta">Maceta</option>
+                <option value="tierra">Tierra</option>
+            </select>
+
+            <label for="cuidados">Cuidados:</label>
+            <input type="text" id="cuidados">
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" required>
+
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" required>
+
+            <button type="button" id="btnCargar">Cargar</button>
+        </form>
+
+        <div id="inv">
+            <h2>Inventario</h2>
+            <table id="inventario">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Nombre Cientifico</th>
+                        <th>Producto</th>
+                        <th>Cuidados</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <p id="msj"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

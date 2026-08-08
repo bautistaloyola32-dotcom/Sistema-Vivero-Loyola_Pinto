@@ -1,0 +1,77 @@
+body {
+    background-color: #cfede3;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+#contenedor1 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#CargarProducto {
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #2e7d32;
+    width: 300px;
+}
+
+#inv {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 8px;
+    width: 100%;
+    border: 1px solid #999;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8f5e9;
+}
